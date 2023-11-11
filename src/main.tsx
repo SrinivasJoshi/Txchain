@@ -14,14 +14,14 @@ import {
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { sepolia } from "wagmi/chains";
+import { goerli } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import Layout from "./components/Layout";
 
 // Walet Config
 const { chains, publicClient } = configureChains(
   // TODO CHANGE TO REQUIRED NETWORK(OPTIONAL)
-  [sepolia],
+  [goerli],
   [publicProvider()],
 );
 
